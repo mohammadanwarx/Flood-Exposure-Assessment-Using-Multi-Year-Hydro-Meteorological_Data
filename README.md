@@ -20,8 +20,10 @@ flood-exposure-geospatial-pipeline/
 │   ├── preprocessing.py   # Reproject, mask, clip operations
 │   ├── analysis.py        # Zonal statistics and exposure metrics
 │   └── visualization.py   # Maps and plots
+├── tests/             # Unit tests for all modules
 ├── notebooks/         # Jupyter notebooks for analysis
-└── outputs/          # All analysis outputs (figures, results)
+├── outputs/           # All analysis outputs (figures, results)
+└── example.py         # Example workflow script
 ```
 
 ## Installation
@@ -58,7 +60,22 @@ plot_zonal_statistics(results, 'mean', title='Mean Flood Depth by Region')
 
 ## Usage
 
-See the `notebooks/` directory for detailed examples and tutorials.
+See `example.py` for a complete workflow script, and the `notebooks/` directory for detailed analysis examples.
+
+## Testing
+
+Run the test suite:
+
+```bash
+# Run all tests
+pytest tests/
+
+# Run with coverage
+pytest tests/ --cov=src
+
+# Run specific test file
+pytest tests/test_analysis.py
+```
 
 ## License
 
