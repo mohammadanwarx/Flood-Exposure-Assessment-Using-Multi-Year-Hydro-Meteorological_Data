@@ -41,13 +41,6 @@ poetry install
 poetry shell
 ```
 
-### Using Conda
-
-```bash
-conda env create -f environment.yml
-conda activate flood-exposure
-```
-
 ### Using pip
 
 ```bash
